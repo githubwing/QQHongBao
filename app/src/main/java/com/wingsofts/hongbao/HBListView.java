@@ -47,7 +47,7 @@ public class HBListView extends ListView {
 
         if (mImageView.getHeight() < 300) {
             if (isTouchEvent && deltaY < 0) {
-                mImageView.getLayoutParams().height += Math.abs(deltaY);
+                mImageView.getLayoutParams().height += Math.abs(deltaY)/2;
                 mImageView.requestLayout();
             }
         }
